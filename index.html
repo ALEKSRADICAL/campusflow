@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusFlow — Каталог</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">CampusFlow</div>
+    <nav aria-label="Основная навигация">
+      <ul>
+        <li><a href="#" aria-current="page">Каталог</a></li>
+        <li><a href="#">Мои события</a></li>
+        <li><a href="#">Профиль</a></li>
+      </ul>
+    </nav>
+    <input type="search" placeholder="Поиск" aria-label="Поиск по сайту" />
+  </header>
+
+  <main id="main">
+    <h1>Учебные мероприятия</h1>
+    <p>Найдите лекцию, мастер-класс или встречу по интересам.</p>
+
+    <section aria-label="Фильтры">
+      <button>Все</button>
+      <button>Frontend</button>
+      <button>Backend</button>
+    </section>
+
+    <section aria-label="Список мероприятий" class="events-grid">
+      <article class="event-card">
+        <span class="badge">Frontend</span>
+        <h2>Семантический HTML</h2>
+        <p>18 сен · 16:00 · ауд. 304</p>
+        <p>18 мест</p>
+        <button aria-label="Добавить в избранное">♡</button>
+      </article>
+      <article class="event-card">
+        <span class="badge">Инструменты</span>
+        <h2>Git без страха</h2>
+        <p>19 сен · 14:30 · online</p>
+        <p>8 мест</p>
+        <button aria-label="Добавить в избранное">♡</button>
+      </article>
+      <article class="event-card">
+        <span class="badge">UX/UI</span>
+        <h2>UX-разбор интерфейсов</h2>
+        <p>21 сен · 17:00 · коворкинг</p>
+        <p>5 мест</p>
+        <button aria-label="Добавить в избранное">♡</button>
+      </article>
+    </section>
+
+    <nav aria-label="Пагинация">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+    </nav>
+  </main>
+
+  <aside aria-label="Мои фильтры">
+    <h2>Мои фильтры</h2>
+    <p>Дата</p>
+    <p>Формат</p>
+  </aside>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
